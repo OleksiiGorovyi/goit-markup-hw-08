@@ -190,20 +190,32 @@ body {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+}
+@media screen and (min-width: 1200px) {
+  .modal-title {
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+  }
 }
 
 .modal-label-text {
   display: block;
   margin-top: 10px;
   margin-bottom: 4px;
-  font-size: 12px;
-  line-height: 1.16;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.01em;
   color: #757575;
+}
+@media screen and (min-width: 1200px) {
+  .modal-label-text {
+    font-size: 14px;
+    line-height: 1.16;
+  }
 }
 
 .modal-input {
@@ -270,9 +282,10 @@ body {
 .check-text {
   display: flex;
   align-items: center;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
+  color: #757575;
   color: #757575;
   cursor: pointer;
 }
@@ -285,6 +298,12 @@ body {
   fill: transparent;
   border-radius: 2px;
   border: 1px solid rgba(117, 117, 117, 0.5);
+}
+@media screen and (min-width: 1200px) {
+  .check-text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .input-check {
@@ -314,12 +333,18 @@ body {
 
 .rules {
   margin-left: 3px;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: #2196F3;
+}
+@media screen and (min-width: 1200px) {
+  .rules {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .submit-btn {
@@ -541,10 +566,10 @@ body {
   position: fixed;
   top: 0;
   background-color: #ffffff;
-  width: 100vw;
-  height: 100vw;
+  width: 100%;
+  height: 100%;
   z-index: 1;
-  padding-top: 48px;
+  padding-top: 21px;
   padding-bottom: 48px;
   padding-left: 40px;
   padding-right: 10px;
@@ -552,6 +577,7 @@ body {
 .mob-menu > .mob-menu-container {
   height: 100%;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
   overflow: auto;
@@ -730,7 +756,7 @@ body {
   background-color: #188CE8;
 }
 @media screen and (min-width: 1200px) {
-  .hero__btn:hover, .hero__btn:focus {
+  .hero__btn {
     min-width: 216px;
     padding: 10px 32px;
   }
@@ -1117,8 +1143,11 @@ body {
 }
 @media screen and (min-width: 768px) {
   .footer-container {
+    margin-left: auto;
     min-width: 768px;
     display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1254,8 +1283,15 @@ body {
   fill: #FFFFFF;
 }
 
+@media screen and (min-width: 768px) {
+  .subscribe {
+    margin: auto;
+    width: 450px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .subscribe {
+    width: 570px;
     margin-left: auto;
     margin-top: 0;
   }
@@ -1297,6 +1333,7 @@ body {
 }
 
 .subscribe-btn {
+  position: relative;
   padding: 10px 28px;
   font-style: normal;
   font-weight: 700;
@@ -1318,20 +1355,20 @@ body {
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
 }
+@media screen and (max-width: 1199px) {
+  .subscribe-btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 @media screen and (min-width: 1200px) {
   .subscribe-btn {
     display: flex;
-    left: 1185px;
-    top: 2784px;
+    margin-left: 12px;
   }
 }
 .subscribe-btn:hover, .subscribe-btn:focus {
   background-color: #188CE8;
-}
-
-.subscribe-btn-field {
-  position: relative;
-  margin-left: 12px;
 }
 
 .subscribe-input-icon {

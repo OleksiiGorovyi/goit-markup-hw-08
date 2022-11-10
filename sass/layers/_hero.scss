@@ -111,9 +111,11 @@
     &:focus {
         background-color: #188CE8;
 
-        @media screen and (min-width: 1200px) {
-            min-width: 216px;
-            padding: 10px 32px;
-        }
+
+    }
+
+    @media screen and (min-width: 1200px) {
+        min-width: 216px;
+        padding: 10px 32px;
     }
 }

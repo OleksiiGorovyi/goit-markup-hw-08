@@ -4,16 +4,20 @@
 
         background: var(--secondary-bg-color);
 
+
         @media screen and (max-width: 1199px) {
                 justify-content: center;
                 align-items: center;
                 text-align: center;
         }
+
 }
 
 .footer-container {
 
         display: block;
+
+
 
 
         @media screen and (min-width: 480px) {
@@ -22,8 +26,12 @@
         }
 
         @media screen and (min-width: 768px) {
+                margin-left: auto;
                 min-width: 768px;
                 display: flex;
+                justify-content: space-around;
+
+                flex-wrap: wrap;
 
         }
 
@@ -36,13 +44,12 @@
 
 .footer-connection {
 
-        // margin-bottom: 60px;
-
         @media screen and (min-width: 768px) {
                 display: flex;
         }
 
         @media screen and (max-width: 767px) {
+
                 margin-bottom: 60px;
         }
 

@@ -23,6 +23,7 @@
     transform: translate(-50%, -50%) scale(1);
     transition: transform 300ms linear;
 
+
     @media screen and (min-width: 1200px) {
         width: 528px;
         height: 581px;
@@ -69,11 +70,19 @@
 
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
+
     text-align: center;
     letter-spacing: 0.03em;
 
     color: #212121;
+
+
+    @media screen and (min-width: 1200px) {
+        line-height: 1.15;
+        letter-spacing: 0.03em;
+    }
+
 }
 
 
@@ -82,11 +91,16 @@
     display: block;
     margin-top: 10px;
     margin-bottom: 4px;
-    font-size: 12px;
-    line-height: 1.16;
+    font-size: 14px;
+    line-height: 1.14;
     letter-spacing: 0.01em;
 
     color: #757575;
+
+    @media screen and(min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.16;
+    }
 }
 
 .modal-input {
@@ -165,9 +179,11 @@
 .check-text {
     display: flex;
     align-items: center;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
+
+    color: #757575;
 
     color: #757575;
     cursor: pointer;
@@ -182,6 +198,11 @@
         fill: transparent;
         border-radius: 2px;
         border: 1px solid rgba(117, 117, 117, 0.5);
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
     }
 }
 
@@ -218,12 +239,17 @@
 
 .rules {
     margin-left: 3px;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
 
     text-decoration-line: underline;
     color: #2196F3;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
 
 
