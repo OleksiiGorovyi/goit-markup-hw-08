@@ -101,7 +101,7 @@
     position: relative;
 }
 
-.menu-social-item::after {
+.menu-social-item:not(:last-child):after {
     content: '';
     width: 22px;
     height: 0;
